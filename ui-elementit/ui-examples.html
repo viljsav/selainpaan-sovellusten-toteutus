@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI-element implementation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="functions">
+        <h1>Try out different UI elements!</h1>
+    </div>
+    <div class="counter">
+        <h2>Click counter</h2>
+        <!-- Call countUp from scripts.js to increase the count-->
+        <button onclick="countUp()">Click me</button>
+        <p>Clicks: <span id="clickCount">0</span></p>
+    </div>
+
+    <div class ="form">
+        <h2>Submitting a form</h2>
+        <!-- Call submitform to submit the form-->
+        <form onsubmit="submitForm(event)">
+            <label for="name">Name: </label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email: </label>
+            <input type="text" id="email" required>
+
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+    <!-- Navigation tool -->
+    <div class="navigation">
+        <h2>Navigation</h2>
+        <a href="page2.html">
+            <button>Page 2</button>
+        </a>
+        <a href="page3.html">
+            <button>Page 3</button>
+        </a>
+        <a href="ui-examples.html">
+            <button>Home</button>
+        </a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
